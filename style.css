@@ -1,0 +1,82 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Minimalist sans-serif font */
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.5;
+}
+
+header {
+    background: #333; /* Slightly lighter black for the header */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: #1abc9c; /* Adds a pop of color on hover for interactivity */
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #222; /* Darker background for input fields */
+    border: none;
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #1abc9c; /* Highlight focus with a color */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1abc9c; /* Matching button background to hover color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a085; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Consistent with header */
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Account Store</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure the CSS path is correct -->
+    <script src="main.js" defer></script> <!-- Ensure the JavaScript path is correct -->
+</head>
+<body>
+    <header>
+        <h1>Game Account Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#store">Store</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Game Account Store!</h2>
+            <p>Find the best deals on accounts for all your favorite games.</p>
+        </section>
+
+        <section id="store">
+            <h2>Featured Accounts</h2>
+            <div class="product" id="product1">
+                <h3>Game Account #1</h3>
+                <button class="details-toggle" data-details-id="details1">Toggle Details</button>
+                <div id="details1" class="hidden">
+                    <p>Description of game account #1. Excellent condition, high rank, lots of extras.</p>
+                </div>
+                <button class="buy-button">Add to Cart</button>
+            </div>
+            <!-- Repeat the above div for each product you want to list -->
+        </section>
+
+        <section id="contact">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="game">Select Game Account:</label>
+                <select id="game" name="game" required>
+                    <option value="">Please select</option>
+                    <option value="account1">Game Account #1</option>
+                    <option value="account2">Game Account #2</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Game Account Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

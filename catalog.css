@@ -1,0 +1,64 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Minimalist sans-serif font */
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.5;
+}
+
+header {
+    background: #333; /* Slightly lighter black for the header */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: #1abc9c; /* Adds a pop of color on hover for interactivity */
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.catalog h2 {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: #222; /* Dark background for product cards */
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 250px; /* Fixed width for each product */
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Consistent with header */
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

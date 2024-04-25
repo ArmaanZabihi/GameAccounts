@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Game Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>List Your Game Account</h1>
+        <nav>
+            <a href="store.html">View Listings</a>
+            <a href="make_listing.html">Make a Listing</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="listingForm">
+            <h2>Create Your Listing</h2>
+            <form action="submit_listing.php" method="post" enctype="multipart/form-data">
+                <label for="title">Product Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="description">Product Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+                <button type="submit">Submit Listing</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Game Account Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
